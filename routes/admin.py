@@ -139,6 +139,7 @@ def search():
 
 	keyword = request.args["keyword"]
 	data_input = request.args.get("data_input", "").strip()
+	data_output = request.args.get("data_output", "").strip()
 
 	if len(keyword)<1:
 		return redirect('/admin/books')
